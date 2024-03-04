@@ -1,0 +1,158 @@
+:root{
+    --cor-titulo: #3B546C;
+    --cor-subtitulo: #474747;
+    --cor-fundo: #F5F5F5;
+    --cor-menu: #474747;
+    --cor-menu-destaque: #3b546c;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ____________HEADER_____________*/
+
+header{
+    margin-top: 80px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+}
+
+header span{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+header a{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-menu);
+    opacity: 0.7;
+    filter: grayscale(100%);
+}
+
+header a:hover,
+header a img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    scale: 1.1;
+    transition: all 0.4s;
+}
+
+header img{
+    width: 90px;
+}
+
+header .motion-logo{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+header .motion-logo img{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+
+
+/* ____________Sessão_Titulo_____________*/
+
+#section-titulo{
+    margin-left: 10%;
+    margin-top: 90px;
+}
+
+#section-titulo h1{
+    font-size: 80px;
+    color: var(--cor-titulo);
+}
+
+#section-titulo h6{
+    font-size: 40px;
+    color: var(--cor-subtitulo);
+}
+
+
+/* ____________Sessão_Carros_____________*/
+
+#section-carros .container{
+    align-items: center;
+}
+
+#section-carros .imagens{
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    margin-top: 80px;
+}
+
+#section-carros .imagens img{
+    height: 240px;
+    margin-right: 50px;
+}
+
+#section-carros a{
+    font-size: 22px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-titulo);
+    text-decoration: none;
+
+    height: 60px;
+    width: 180px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+}
+
+#section-carros a:hover{
+    transition: all 0.5s;
+    scale: 1.05;
+}
+
+
+
+
+footer button{
+    background-color: #3B546C;
+    color: var(--cor-fundo);
+    padding: 20px 52px;
+    font-size: 22px;
+    border-radius: 36px;
+    border: none;
+}
+
