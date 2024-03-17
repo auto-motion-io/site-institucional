@@ -72,7 +72,7 @@ header a:hover,
 header a img:hover{
     filter: grayscale(0%);
     opacity: 1;
-    scale: 1.1;
+    scale: 1.05;
 }
 
 header img{
@@ -95,172 +95,77 @@ header .motion-logo img{
     margin-bottom: 15px;
 }
 
+/* ------------------------Section Produtos------------------------ */
 
+#section-produtos .container{
+    justify-content: center;
+    align-items: center;
+}
 
-/* ____________Sessão_Titulo_____________*/
+#section-produtos .titulo{
+    padding-left: 100px;
+    align-self: flex-start;
+}
 
-#section-titulo{
+.titulo{
+    font-size: 36px;
     margin-top: 90px;
-}
-
-#section-titulo .container{
-    padding-left: 5%;
-}
-
-#section-titulo h1{
-    font-size: 80px;
-    color: var(--cor-titulo);
-}
-
-#section-titulo h6{
-    font-size: 40px;
     color: var(--cor-subtitulo);
 }
 
-
-/* ____________Sessão_Carros_____________ */
-
-#section-carros .container{
-    align-items: center;
-}
-
-#section-carros .imagens{
-    position: relative;
-    width: 100%;
-
+.cards{
     display: flex;
-    justify-content: center;
-    left: 0px;
-    margin-top: 80px;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 80%;
 }
 
-#section-carros .imagens img{
-    height: 240px;
-    margin-right: 50px;
-}
-
-#section-carros a{
-    font-size: 22px;
-    color: var(--cor-fundo);
-    background-color: var(--cor-titulo);
-    text-decoration: none;
-
-    height: 72px;
-    width: 180px;
-    border-radius: 40px;
-
+.card{
+    width: fit-content;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-top: 70px;
-    transition: all 0.5s;
+    flex-direction: column;
 }
 
-#section-carros a:hover{
-    scale: 1.05;
-}
-
-/* ____________Sessão_Jornada_____________ */
-
-#section-jornada{
-    margin-top: 120px;
-    font-weight: lighter;
-}
-
-#section-jornada .container{
-    padding-left: 5%;
-}
-
-#section-jornada h1{
-    font-size: 56px;
-    color: #474747;
-    font-weight: bold;
-}
-
-#section-jornada .texto{
-    width: 70%;
-    margin-top: 20px;
-}
-
-#section-jornada .texto h5{
-    font-size: 32px;
-    color: #474747;
-    font-weight: lighter;
-}
-
-#section-jornada span{
-    font-weight: bold;
-}
-
-/* ____________Sessão_Barra_____________ */
-
-#section-barra{
-    width: 40%;
-    height: 96px;
-    background-color: #3B546C;
-    align-self: flex-end;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    margin-top: 112px;
-}
-
-#section-barra-2{
-    width: 40%;
-    height: 96px;
-    background-color: #3B546C;
-    align-self: flex-start;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    margin-top: 120px;
-}
-
-/* ____________Sessão_Pilares_____________ */
-
-#section-pilares{
-    margin-top: 112px;
-}
-
-#section-pilares .container{
-    padding-left: 5%;
-    display: flex;
-}
-
-#section-pilares h1{
-    color: var(--cor-menu);
-    font-size: 56px;
-}
-
-#section-pilares .imagens{
-    display: flex;
-    justify-content: center;
-    margin-top: 96px;
-    width: 92%;
-}
-
-#section-pilares .card{
+.card-img{
+    width: 600px;
+    height: 370px;
+    border: 5px solid lightgray;
+    border-radius: 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 420px;
+    align-items: center;
 }
 
-#section-pilares .card:nth-child(3){
-    padding-left: 80px;
+.card-img img{
+    height: 120px;
 }
 
-#section-pilares .card img{
-    height: 216px;
+.card a{
+    padding: 22px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #fefefe;
+    font-weight: 500;
+    transition: all 0.4s;
 }
 
-#section-pilares .card h6{
-    font-size: 24px;
-    margin-top: 56px;
-    color: #474747;
+.card:nth-child(1) a{
+    background-color: #C66D2C;
 }
 
+.card:nth-child(2) a{
+    background-color: #315C32;
+}
 
+.card a:hover{
+    scale: 1.05;
+}
 
 /* ________________Footer__________________ */
 
@@ -268,7 +173,7 @@ footer{
     position: relative;
     height: 470px;
     width: 100%;
-    margin-top: 400px;
+    margin-top: 350px;
 }
 
 footer .imagem-footer-carros{

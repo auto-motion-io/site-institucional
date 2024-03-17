@@ -1,0 +1,126 @@
+:root{
+    --cor-titulo: #3B546C;
+    --cor-subtitulo: #474747;
+    --cor-fundo: #F1EFE9;
+    --cor-menu: #474747;
+    --cor-menu-destaque: #3b546c;
+    --cor-footer: #DFDEDB;
+
+}
+
+@font-face {
+    font-family: "Aristotelica";
+    src: url("./src/assets/fontes/aristotelica-display-trial-demibold.ttf") format('ttf');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Aristotelica", sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    width:100vw;
+}
+
+.container{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ____________HEADER_____________*/
+
+header{
+    margin-top: 80px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+}
+
+header span{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+header a{
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-menu);
+    opacity: 0.7;
+    filter: grayscale(100%);
+    transition: all 0.4s;
+}
+
+header a:hover,
+header a img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    scale: 1.05;
+}
+
+header img{
+    width: 90px;
+    transition: all 0.4s;
+}
+
+header img:nth-child(1){
+    margin-right: 30px;
+}
+
+
+header .motion-logo{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+header .motion-logo img{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+/* ______________Section Banner___________________ */
+
+#section-banner{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#section-banner .container{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.banner-text{
+    position: relative;
+    width: 100px;
+
+}
+
+.img-banner{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.img-banner img{
+    width: 400px;
+}
