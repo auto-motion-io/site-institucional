@@ -274,6 +274,62 @@ header .motion-logo img{
     margin-right: 20px;
 }
 
+/* _____________Section_Marcas_____________ */
+
+#section-marcas{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#section-marcas .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-marcas .mensagem-marca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-marcas .mensagem{
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+}
+
+#section-marcas .mensagem h1{
+    word-wrap: break-word;
+    font-size: 55px;
+    line-height: 60px;
+    color: #474747;
+    font-weight: normal;
+}
+
+#section-marcas .marcas img{
+    height: 240px;
+}
+
+#section-marcas a{
+    padding: 30px;
+    background-color: #2F5830;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 60px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#section-marcas a img{
+    height: 34px;
+    margin-bottom: -16px;
+    filter: brightness(100);
+    margin-left: 4px;
+}
+
 /* ________________Footer__________________ */
 
 footer {
@@ -321,7 +377,7 @@ footer .menu{
 footer .links{
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 800px;
 }
 
 footer .somos, .produtos, .contato, .logos{

@@ -451,7 +451,7 @@ footer .menu{
 footer .links{
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 800px;
 }
 
 footer .somos, .produtos, .contato, .logos{
@@ -491,4 +491,17 @@ footer .logos a img:hover{
     filter: grayscale(0%);
     opacity: 1;
     scale: 1.1;
+}
+
+/* Responsividade */
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+    #section-banner .img-banner{
+        width: 1000px;
+    }
+
+    #section-banner .img-banner img{
+        width: 1000px;
+        margin-top: -150px;
+    }
 }
