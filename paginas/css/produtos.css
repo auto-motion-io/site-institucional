@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Aristotelica";
-    src: url("./src/assets/fontes/aristotelica-display-trial-demibold.ttf") format('ttf');
+    src: url("./../../src/assets/fontes/aristotelica-display-trial-demibold.ttf") format('ttf');
 }
 
 *{
