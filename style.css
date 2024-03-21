@@ -89,6 +89,10 @@ header .motion-logo{
     opacity: 1;
 }
 
+header .motion-logo:hover{
+    scale: 1;
+}
+
 header .motion-logo img{
     width: 200px;
     margin-bottom: 15px;
@@ -120,16 +124,32 @@ header .motion-logo img{
 /* ____________Sessão_Carros_____________ */
 
 #section-carros .container{
+    width: 100%;
     align-items: center;
-    overflow-x: hidden;
 }
 
-#section-carros .imagens{
+#section-carros .carros-animacao{
+    overflow: hidden;
+    padding: 60px 0;
     white-space: nowrap;
 }
 
-#section-carros img{
-    width: 500px;
+@keyframes slide{
+    from{
+        transform: translateX(0%);
+    } to{
+        transform: translateX(100%);
+    }
+}
+
+#section-carros .imagens{
+    display: inline-block;
+    animation: 4s slide infinite linear;
+}
+
+#section-carros .imagens img{
+    height: 250px;
+    margin: 0 40px;
 }
 
 #section-carros a{
